@@ -2,10 +2,12 @@
 https://leetcode.com/problems/defanging-an-ip-address/description/
 """
 
-def defangIPaddr(address: str) -> str:
-    a=address.split(".")
-    b=("[.]").join(a)
-    return b
+class Solution:
+    def defangIPaddr(self, address: str) -> str:
+        a=address.split(".")
+        b=("[.]").join(a)
+        return b
 
 #try:
-print(defangIPaddr(address="100.100.100.100"))
+obj=Solution()
+print(obj.defangIPaddr(address="100.100.100.100"))
