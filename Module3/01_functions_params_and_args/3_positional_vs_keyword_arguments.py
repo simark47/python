@@ -23,7 +23,7 @@ print("----------")
 
 def calculateBill(amount,*, tax=18, tip=0):
     print(((amount*(100+tax))/100)+tip)
-# aftr * all args will be positional only
+# aftr * all args will be KEYWORD only
 # calculateBill(2000, 0,0) gives error  calculateBill() takes 1 positional argument but 3 were given
 
 # calculateBill(2000, 0,tip=0)  calculateBill() takes 1 positional argument but 2 positional arguments (and 1 keyword-only argument) were given
